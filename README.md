@@ -13,6 +13,10 @@ A responsive restaurant website built using HTML, CSS, and JavaScript.
 - Form validation
 - Table reservation
 - Responsive design
+- Restaurant information
+- Opening hours
+- Contact details
+- Social links
 
 ## Technologies
 
