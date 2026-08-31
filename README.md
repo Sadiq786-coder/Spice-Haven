@@ -5,11 +5,14 @@ A responsive restaurant website built using HTML, CSS, and JavaScript.
 ## Features
 
 - Responsive navigation
+- Mobile hamburger menu
 - Restaurant menu
 - Chef's specialties
+- Food gallery
 - Contact form
-- Mobile-friendly layout
-- Interactive hamburger menu
+- Form validation
+- Table reservation
+- Responsive design
 
 ## Technologies
 
