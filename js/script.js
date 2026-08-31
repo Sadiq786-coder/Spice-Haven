@@ -50,3 +50,17 @@ contactForm.addEventListener("submit", function (event) {
         "Thank you! Your message has been sent.";
 
 });
+
+const reservationForm = document.querySelector("#reservation-form");
+
+const reservationMessage =
+    document.querySelector("#reservation-message");
+
+reservationForm.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    reservationMessage.textContent =
+        "Your table has been reserved successfully!";
+
+});
