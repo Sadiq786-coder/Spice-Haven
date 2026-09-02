@@ -81,9 +81,30 @@
 
     <section id="menu">
         <h2>Our Menu</h2>
+
+        <div class="menu-filters">
+
+            <button class="filter-btn active" data-category="all">
+                All
+            </button>
+        
+            <button class="filter-btn" data-category="starter">
+                Starters
+            </button>
+        
+            <button class="filter-btn" data-category="main">
+                Main Course
+            </button>
+        
+            <button class="filter-btn" data-category="dessert">
+                Desserts
+            </button>
+        
+        </div>
+
         <h3>Starters</h3>
         <ul class="menu-grid">
-            <li class="card">
+            <li class="card menu-item" data-category="starter">
                 <strong>Paneer Tikka</strong>
 
                 <p>
@@ -93,7 +114,7 @@
                 <p>₹220</p>
 
             </li>
-            <li class="card">
+            <li class="card menu-item" data-category="starter">
 
                 <strong>Chicken 65</strong>
 
@@ -104,7 +125,7 @@
                 <p>₹240</p>
             
             </li>
-            <li class="card">
+            <li class="card menu-item" data-category="starter">
 
                 <strong>Vegetable Samosa</strong>
 
@@ -119,7 +140,7 @@
         <h3>Main Course</h3>
         <ul class="menu-grid">
 
-            <li class="card">
+            <li class="card menu-item" data-category="main">
             
                 <strong>Hyderabadi Biryani</strong>
             
@@ -131,7 +152,7 @@
             
             </li>
         
-            <li class="card">
+            <li class="card menu-item" data-category="main">
             
                 <strong>Butter Chicken</strong>
             
@@ -143,7 +164,7 @@
             
             </li>
         
-            <li class="card">
+            <li class="card menu-item" data-category="main">
             
                 <strong>Paneer Butter Masala</strong>
             
@@ -159,7 +180,7 @@
         <h3>Desserts</h3>
         <ul class="menu-grid">
 
-            <li class="card">
+            <li class="card menu-item" data-category="dessert">
             
                 <strong>Gulab Jamun</strong>
             
@@ -171,7 +192,7 @@
             
             </li>
         
-            <li class="card">
+            <li class="card menu-item" data-category="dessert">
             
                 <strong>Mango Lassi</strong>
             

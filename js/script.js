@@ -198,3 +198,50 @@ document.addEventListener("keydown", function (event) {
 
 });
 
+const filterButtons = document.querySelectorAll(".filter-btn");
+
+const menuItems = document.querySelectorAll(".menu-item");
+
+
+filterButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const selectedCategory =
+            button.dataset.category;
+
+
+        filterButtons.forEach(function (btn) {
+
+            btn.classList.remove("active");
+
+        });
+
+
+        button.classList.add("active");
+
+
+        menuItems.forEach(function (item) {
+
+            const itemCategory =
+                item.dataset.category;
+
+
+            if (
+                selectedCategory === "all" ||
+                itemCategory === selectedCategory
+            ) {
+
+                item.style.display = "";
+
+            } else {
+
+                item.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
