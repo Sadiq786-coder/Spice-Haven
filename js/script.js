@@ -200,7 +200,7 @@ document.addEventListener("keydown", function (event) {
 
 const filterButtons = document.querySelectorAll(".filter-btn");
 
-const menuItems = document.querySelectorAll(".menu-item");
+const menuCategories = document.querySelectorAll(".menu-category");
 
 
 filterButtons.forEach(function (button) {
@@ -221,22 +221,22 @@ filterButtons.forEach(function (button) {
         button.classList.add("active");
 
 
-        menuItems.forEach(function (item) {
+        menuCategories.forEach(function (category) {
 
-            const itemCategory =
-                item.dataset.category;
+            const categoryName =
+                category.dataset.category;
 
 
             if (
                 selectedCategory === "all" ||
-                itemCategory === selectedCategory
+                categoryName === selectedCategory
             ) {
 
-                item.style.display = "";
+                category.style.display = "";
 
             } else {
 
-                item.style.display = "none";
+                category.style.display = "none";
 
             }
 
@@ -245,3 +245,6 @@ filterButtons.forEach(function (button) {
     });
 
 });
+
+
+

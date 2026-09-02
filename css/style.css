@@ -469,6 +469,10 @@ footer p {
     color: white;
 }
 
+.menu-category {
+    margin-bottom: 30px;
+}
+
 /* Tablet */
 
 @media (max-width: 1024px) {
