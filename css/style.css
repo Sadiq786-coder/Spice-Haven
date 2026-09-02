@@ -1,9 +1,15 @@
+/* =========================
+   RESET
+========================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================
+   BODY
+========================= */
 body {
     font-family: Arial, sans-serif;
     background-color: #fff8f0;
@@ -16,6 +22,9 @@ html {
     scroll-behavior: smooth;
 }
 
+/* =========================
+   NAVIGATION
+========================= */
 nav {
     display: flex;
     justify-content: space-between;
@@ -50,6 +59,9 @@ nav a:hover {
     color: #f4b942;
 }
 
+/* =========================
+   SECTION
+========================= */
 section {
     max-width: 1200px;
     margin: 20px auto;
@@ -76,6 +88,9 @@ section p {
     margin-bottom: 15px;
 }
 
+/* =========================
+   HERO
+========================= */
 .hero {
     max-width: none;
     margin: 0;
@@ -110,6 +125,9 @@ section p {
     background-color: #5a1515;
 }
 
+/* =========================
+   MENU
+========================= */
 #menu {
     background-color: white;
     border-radius: 10px;
@@ -123,8 +141,6 @@ section p {
     gap: 20px;
 }
 
-
-
 .menu-grid strong {
     display: block;
     font-size: 20px;
@@ -137,6 +153,9 @@ section p {
     color: #3b0a0a;
 }
 
+/* =========================
+   ABOUT
+========================= */
 .about {
     text-align: center;
     background-color: white;
@@ -149,6 +168,9 @@ section p {
     margin: 0 auto;
 }
 
+/* =========================
+   SPECIALTIES
+========================= */
 .specialties {
     text-align: center;
 }
@@ -192,6 +214,9 @@ h3 {
     font-weight: bold;
 }
 
+/* =========================
+   CONTACTS
+========================= */
 .contact input,
 .contact textarea {
     width: 100%;
@@ -230,6 +255,9 @@ h3 {
     transform: translateY(0);
 }
 
+/* =========================
+   FOOTER
+========================= */
 footer {
     background-color: #3b0a0a;
     color: white;
@@ -291,6 +319,9 @@ footer p {
     font-weight: bold;
 }
 
+/* =========================
+   RESERVATION
+========================= */
 .reservation {
     background-color: white;
     border-radius: 10px;
@@ -344,6 +375,9 @@ footer p {
     color: #3b0a0a;
 }
 
+/* =========================
+   GALLERY
+========================= */
 .gallery {
     text-align: center;
 }
@@ -379,6 +413,9 @@ footer p {
     margin: 0;
 }
 
+/* =========================
+   VISIT
+========================= */
 .visit {
     text-align: center;
 }
@@ -412,6 +449,9 @@ footer p {
     color: #b8860b;
 }
 
+/* =========================
+   GALLERY
+========================= */
 .gallery-image {
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -473,6 +513,26 @@ footer p {
     margin-bottom: 30px;
 }
 
+.btn {
+    display: inline-block;
+    background-color: #3b0a0a;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #5a1515;
+    transform: translateY(-2px);
+}
+
 /* Tablet */
 
 @media (max-width: 1024px) {
@@ -510,6 +570,7 @@ footer p {
 
     nav {
         flex-direction: column;
+        align-items: center;
         gap: 15px;
         padding: 20px;
     }
