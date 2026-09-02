@@ -149,3 +149,52 @@ navLinks.forEach(function (link) {
     });
 
 });
+
+const galleryImages = document.querySelectorAll(".gallery-image");
+
+const lightbox = document.querySelector("#lightbox");
+
+const lightboxImage = document.querySelector("#lightbox-image");
+
+const lightboxClose = document.querySelector("#lightbox-close");
+
+galleryImages.forEach(function (image) {
+
+    image.addEventListener("click", function () {
+
+        lightboxImage.src = image.src;
+
+        lightboxImage.alt = image.alt;
+
+        lightbox.style.display = "flex";
+
+    });
+
+});
+
+lightboxClose.addEventListener("click", function () {
+
+    lightbox.style.display = "none";
+
+});
+
+lightbox.addEventListener("click", function (event) {
+
+    if (event.target === lightbox) {
+
+        lightbox.style.display = "none";
+
+    }
+
+});
+
+document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+
+        lightbox.style.display = "none";
+
+    }
+
+});
+
