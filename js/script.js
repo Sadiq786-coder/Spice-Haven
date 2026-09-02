@@ -135,3 +135,17 @@ reservationForm.addEventListener("submit", function (event) {
 
     reservationForm.reset();
 });
+
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        navMenu.classList.remove("nav-open");
+
+        menuToggle.textContent = "☰";
+
+    });
+
+});

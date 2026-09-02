@@ -12,6 +12,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -19,6 +23,10 @@ nav {
     background-color: #3b0a0a;
     color: white;
     padding: 20px 40px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav h2 {
@@ -46,6 +54,7 @@ section {
     max-width: 1200px;
     margin: 20px auto;
     padding: 100px 40px;
+    scroll-margin-top: 90px;
 }
 
 section h2 {
